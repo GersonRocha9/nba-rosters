@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "nba-esportudo",
+    "slug": "nba-esportudo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
