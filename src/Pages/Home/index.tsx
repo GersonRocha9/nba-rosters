@@ -44,8 +44,8 @@ const Home = () => {
           <TeamButton onPress={() => getPlayer(item.id)}>
             <Image
               style={{
-                width: 60,
-                height: 60,
+                width: 70,
+                height: 70,
                 overflow: "visible",
               }}
               source={{
