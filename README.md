@@ -4,10 +4,6 @@
 
 <p align="center">
   <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=CD9834&labelColor=121214" alt="License">
-  
-
-
-
 </p>
 
 <h1 align="center">
@@ -16,9 +12,9 @@
 
 <br>
 
-## 🧪 Technologies
+## 🧪 Tecnologias
 
-This project was developed using the following technologies:
+Esse projeto foi desenvolvido usando as seguintes tecnologias:
  
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
@@ -27,16 +23,16 @@ This project was developed using the following technologies:
 - [Axios](https://axios-http.com/docs/intro)
 - [API: API SPORTS NBA](https://api-sports.io/documentation/nba/v2#section/Introduction)
 
-## 🚀 Getting started
+## 🚀 Iniciando o projeto
 
-Clone the project and access the folder.
+Clone esse repositório e acesse a pasta dele
 
 ```bash
 $ git clone https://github.com/GersonRocha9/nba-rosters.git
 $ cd nba-rosters
 ```
 
-Follow the steps below:
+Execute os comandos abaixo:
 ```bash
 # Install the dependencies
 $ yarn
@@ -45,10 +41,10 @@ $ yarn
 $ expo start
 ```
 
-## 📝 License
+## 📝 Licença
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
 ---
 
-Made with 💚 by [Gerson Rocha](https://www.linkedin.com/in/gersonrocha/)
+Feito com 💚 por [Gerson Rocha](https://www.linkedin.com/in/gersonrocha/)
