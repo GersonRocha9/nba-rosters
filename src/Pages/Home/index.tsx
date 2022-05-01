@@ -29,7 +29,12 @@ const Home = () => {
   // Requisição da lista de jogadores
   const getPlayer = async (id) => {
     const { data } = await apiPlayer.get(`/players?team=${id}`);
-    setPlayers(data.response.sort((a, b) => a.firstname.localeCompare(b.firstname)));
+
+    setPlayers(
+      data.response.sort(
+        (a, b) => a.firstname.localeCompare(b.firstname) // Ordenação alfabética
+      )
+    );
   };
 
   useEffect(() => {

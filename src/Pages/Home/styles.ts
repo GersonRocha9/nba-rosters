@@ -16,7 +16,7 @@ export const Title = styled.Text`
 `;
 
 export const Subtitle = styled.Text`
-  font-size: ${RFValue(10)}px;
+  font-size: ${RFValue(11)}px;
   color: ${(props) => props.theme.COLORS.text};
   font-family: ${(props) => props.theme.FONTS.regular};
 `;
