@@ -8,7 +8,7 @@
 
 <h1 align="center">
     <img alt="Screenshot" title="Screenshot"  width="500px" src="./src/assets/screenshot.png" />
-</h1>****
+</h1>
 
 <br>
 
