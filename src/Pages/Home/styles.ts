@@ -24,7 +24,7 @@ export const Subtitle = styled.Text`
 export const TeamList = styled.FlatList.attrs({
   showsHorizontalScrollIndicator: false,
 })`
-  height: 20%;
+  height: 19%;
 `;
 
 export const TeamButton = styled.TouchableOpacity`
@@ -32,14 +32,19 @@ export const TeamButton = styled.TouchableOpacity`
   justify-content: space-between;
   padding: 20px;
   border-radius: 4px;
-  margin-right: 12px;
+`;
+
+export const TeamName = styled.Text`
+  font-size: ${RFValue(10)}px;
+  color: ${(props) => props.theme.COLORS.text};
+  font-family: ${(props) => props.theme.FONTS.regular};
 `;
 
 export const PlayerList = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
   margin-top: 20px;
-  height: 60%;
+  height: 55%;
   padding: 0 20px;
 `;
 
@@ -54,8 +59,9 @@ export const PlayerButton = styled.TouchableOpacity`
 `;
 
 export const PlayerText = styled.Text`
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(12)}px;
   color: ${(props) => props.theme.COLORS.text};
   font-family: ${(props) => props.theme.FONTS.medium};
   text-align: justify;
+  margin-top: 10px;
 `;
