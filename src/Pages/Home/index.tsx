@@ -43,9 +43,8 @@ const Home = () => {
 
   return (
     <Container>
+      <Image style={{ width: "70%", height: "7%", marginTop: 20 }} source={require("../../assets/esportudoLogo.png")} />
       <Image style={{ width: 100, height: 100 }} source={require("../../assets/nbaLogo.png")} />
-
-      <Image style={{ width: "70%", height: "7%" }} source={require("../../assets/esportudoLogo.png")} />
 
       <Title>Escolha seu time:</Title>
 
