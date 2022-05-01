@@ -35,6 +35,8 @@ const Home = () => {
         (a, b) => a.firstname.localeCompare(b.firstname) // Ordenação alfabética
       )
     );
+
+    console.log(data.response);
   };
 
   useEffect(() => {
@@ -79,7 +81,7 @@ const Home = () => {
         <Subtitle>Nome</Subtitle>
         <Subtitle>Nascimento</Subtitle>
         <Subtitle>Altura</Subtitle>
-        <Subtitle>Peso </Subtitle>
+        <Subtitle>Peso</Subtitle>
       </Info>
 
       <PlayerList
