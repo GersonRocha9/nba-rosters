@@ -36,6 +36,7 @@ export const TeamButton = styled.TouchableOpacity`
 
 export const TeamName = styled.Text`
   font-size: ${RFValue(10)}px;
+  margin-top: ${RFValue(15)}px;
   color: ${(props) => props.theme.COLORS.text};
   font-family: ${(props) => props.theme.FONTS.medium};
 `;
@@ -52,7 +53,7 @@ export const PlayerList = styled.FlatList.attrs({
   showsHorizontalScrollIndicator: false,
 })`
   margin-top: 20px;
-  height: 55%;
+  height: ${RFValue(50)}%;
   padding: 0 20px;
 `;
 
