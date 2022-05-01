@@ -3,7 +3,18 @@ import { Image } from "react-native";
 
 import apiPlayer from "../../Services/ApiPlayer";
 import apiTeams from "../../Services/ApiTeam";
-import { Container, PlayerButton, PlayerList, PlayerText, Subtitle, TeamButton, TeamList, TeamName, Title } from "./styles";
+import {
+  Container,
+  Info,
+  PlayerButton,
+  PlayerList,
+  PlayerText,
+  Subtitle,
+  TeamButton,
+  TeamList,
+  TeamName,
+  Title,
+} from "./styles";
 
 const Home = () => {
   let [team, setTeam] = useState({});
@@ -13,7 +24,6 @@ const Home = () => {
   const getTeam = async () => {
     const { data } = await apiTeams.get("/teams/");
     setTeam(data.response.filter((team) => team.nbaFranchise === true && team.allStar === false));
-    console.log(data.response);
   };
 
   // Requisição da lista de jogadores
@@ -60,7 +70,13 @@ const Home = () => {
 
       {/* Listagem do elenco de acordo com o time selecionado */}
       <Title>Elenco 2021/22</Title>
-      <Subtitle>Nome | Data de nascimento | Altura | Peso </Subtitle>
+      {/* <Subtitle>Nome | Data de nascimento | Altura | Peso </Subtitle> */}
+      <Info>
+        <Subtitle>Nome</Subtitle>
+        <Subtitle>Nascimento</Subtitle>
+        <Subtitle>Altura</Subtitle>
+        <Subtitle>Peso </Subtitle>
+      </Info>
 
       <PlayerList
         data={player}
@@ -68,8 +84,14 @@ const Home = () => {
         renderItem={({ item }) => (
           <PlayerButton>
             <PlayerText>
-              {item.firstname} {item.lastname} | {item.birth.date} | {item.height.meters}m | {item.weight.kilograms}kg
+              {item.firstname} {item.lastname}
             </PlayerText>
+
+            <PlayerText>{item.birth.date}</PlayerText>
+
+            <PlayerText>{item.height.meters}m</PlayerText>
+
+            <PlayerText>{item.weight.kilograms}kg</PlayerText>
           </PlayerButton>
         )}
       />

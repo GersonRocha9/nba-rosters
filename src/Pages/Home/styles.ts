@@ -37,11 +37,19 @@ export const TeamButton = styled.TouchableOpacity`
 export const TeamName = styled.Text`
   font-size: ${RFValue(10)}px;
   color: ${(props) => props.theme.COLORS.text};
-  font-family: ${(props) => props.theme.FONTS.regular};
+  font-family: ${(props) => props.theme.FONTS.medium};
+`;
+
+export const Info = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
 `;
 
 export const PlayerList = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
+  showsHorizontalScrollIndicator: false,
 })`
   margin-top: 20px;
   height: 55%;
@@ -50,7 +58,7 @@ export const PlayerList = styled.FlatList.attrs({
 
 export const PlayerButton = styled.TouchableOpacity`
   padding: 2px;
-  width: 100%;
+  width: 97%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,9 +67,10 @@ export const PlayerButton = styled.TouchableOpacity`
 `;
 
 export const PlayerText = styled.Text`
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
   color: ${(props) => props.theme.COLORS.text};
   font-family: ${(props) => props.theme.FONTS.medium};
-  text-align: justify;
   margin-top: 10px;
+  text-align: center;
+  width: 20%;
 `;
