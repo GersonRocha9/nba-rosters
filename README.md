@@ -12,6 +12,10 @@
 
 <br>
 
+### O NBA ROSTERS APP é um app criado com React Native para visualização das 30 franquias da NBA e dos elencos atuais daquele time. Para visualizar, basta tocar em algum logo e o elenco poderá ser visualizado na parte inferior do app trazendo informações como nome e sobrenome, data de nascimento, altura e peso. Em breve, traremos também informações como número da camisa, posição e universidade que o atleta jogou.
+
+<br>
+
 ## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido usando as seguintes tecnologias:
