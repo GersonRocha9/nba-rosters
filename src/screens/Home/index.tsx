@@ -16,6 +16,18 @@ import {
   Title,
 } from "./styles";
 
+interface Team {
+  id: number;
+  name: string;
+  logo: string;
+}
+
+interface Player {
+  id: number;
+  name: string;
+  team: Team;
+}
+
 const Home = () => {
   let [team, setTeam] = useState({});
   let [player, setPlayers] = useState({});
