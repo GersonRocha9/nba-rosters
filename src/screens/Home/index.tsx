@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Image } from "react-native";
 
-import apiPlayer from "../../Services/ApiPlayer";
-import apiTeams from "../../Services/ApiTeam";
+import apiPlayer from "../../services/ApiPlayer";
+import apiTeams from "../../services/ApiTeam";
 import {
   Container,
   Info,
