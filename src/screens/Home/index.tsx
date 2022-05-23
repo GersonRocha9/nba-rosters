@@ -88,7 +88,7 @@ const Home = () => {
 
       {/* Listagem do elenco de acordo com o time selecionado */}
       <Title>Elenco 2021/22</Title>
-      {/* <Subtitle>Nome | Data de nascimento | Altura | Peso </Subtitle> */}
+
       <Info>
         <Subtitle>Nome</Subtitle>
         <Subtitle>Nascimento</Subtitle>
